@@ -2,7 +2,7 @@
 
 This program in java is useful for cooking bar of recipes.
 
-:grapes: :watermelon: :lemon: :pineapple: :apple:
+:grapes: :watermelon: :lemon: :pineapple: :apple: :pear: :cherries: :blueberries: :tomato: :coconut: :melon: :mandarin: :banana: :mango: :green_apple: :peach: :strawberry: :kiwi_fruit:
 
 ---
 
