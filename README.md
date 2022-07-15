@@ -13,6 +13,6 @@ Maybe you use some **hand tool** or **trick** so you can make recipes with the c
 ## How To Use
 
 Is very simple!
-You can just do download of the .java programa or download the all code**(if you know how to use it)**.
+You can just do download of the .java programa or download the all code __(if you know how to use it)__.
 
 ![Interface](https://github.com/danknightt/justimagens/blob/main/interface.png)
