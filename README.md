@@ -15,4 +15,7 @@ Maybe you use some **hand tool** or **trick** so you can make recipes with the c
 Is very simple!
 You can just do download of the .java programa or download the all code __(if you know how to use it)__.
 
+When you open it y'll have the interface of image 1. 
+
+image 1:
 ![Interface](https://github.com/danknightt/justimagens/blob/main/interface.png)
