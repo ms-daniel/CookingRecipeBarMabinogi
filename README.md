@@ -2,7 +2,7 @@
 
 This program in java is useful for cooking bar of recipes.
 
-![Ursinho](https://tenor.com/view/line-gif-23892847)
+![Ursinho](https://c.tenor.com/r_Gf5d2leQQAAAAi/cooking.gif)
 
 ---
 
