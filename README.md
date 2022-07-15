@@ -1,6 +1,7 @@
 # CookingRecipeBarMabinogi
 
 This program in java is useful for cooking bar of recipes.
+![Ursinho](https://user-images.githubusercontent.com/62726040/179244790-0a534e76-dbcf-4abe-95ce-9a5735e3e298.png)
 
 ---
 
