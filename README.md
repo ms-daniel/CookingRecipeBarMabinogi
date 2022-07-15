@@ -1,4 +1,4 @@
-# <b><u>CookingRecipeBarMabinogi</u></b>
+# <b><u>CookingRecipeBarMabinogi<\u><\b>
 This program in java is useful for cooking bar of recipes.
 
 Maybe you use some hand tool or trick so you can make recipes with the correct percentages of the ingredients.
