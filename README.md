@@ -19,7 +19,7 @@ When you open it y'll have the interface of image 1.
 
 ![Image 1](https://github.com/danknightt/justimagens/blob/main/interface.png)
 
-![Image 2](https://c.tenor.com/OAlsOTzn7acAAAAM/click-click-here.gif)
+![Image 2]([https://c.tenor.com/OAlsOTzn7acAAAAM/click-click-here.gif](https://i.pinimg.com/originals/9a/a6/f8/9aa6f87c65de1ce262cb81200dd387a4.gif))
 
 #### Options:
 1. Is the bar you must choose the type of recipe.
