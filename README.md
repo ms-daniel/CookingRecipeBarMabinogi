@@ -2,14 +2,14 @@
 
 This program in java is useful for cooking bar of recipes.
 
-![Ursinho](https://c.tenor.com/r_Gf5d2leQQAAAAi/cooking.gif)
-![Nada](https://c.tenor.com/WGnvFlsK5EYAAAAd/desmondpacito-cooking.gif)
-
 ---
 
 ## Introdution
 
 Maybe you use some **hand tool** or **trick** so you can make recipes with the correct percentages of the ingredients. With this program written in Java you will be able to get rid of these tools and use a **pop-up bar** with percentage marks.
+
+![Ursinho](https://c.tenor.com/r_Gf5d2leQQAAAAi/cooking.gif)
+![Nada](https://c.tenor.com/WGnvFlsK5EYAAAAd/desmondpacito-cooking.gif)
 
 ---
 
