@@ -20,4 +20,14 @@ When you open it y'll have the interface of image 1.
 ![Image 1](https://github.com/danknightt/justimagens/blob/main/interface.png)
 
 ##### Options:
+1. Is the bar you must choose the type of recipe.
+2. Is when you choose the recipe.
 
+
+
+## COMMENTS
+
+This program DOESN'T contain all the game's recipes because it's very boring to create the images, but for that I created another program that automatically generates the images from the percentages. However there may be some bugs.
+
+The other program:
+**COMING SOON**
