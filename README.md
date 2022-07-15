@@ -22,6 +22,7 @@ When you open it y'll have the interface of image 1.
 #### Options:
 1. Is the bar you must choose the type of recipe.
 2. Is when you choose the recipe.
+3. This part is not complete, here you will select the game's resolution in the future.
 
 ---
 
