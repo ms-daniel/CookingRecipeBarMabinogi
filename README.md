@@ -7,7 +7,9 @@ This program in java is useful for cooking bar of recipes.
 :potato: :carrot: :hot_pepper: :onion: :mushroom: :garlic: :corn:
 
 :bread: :cheese: :cut_of_meat: :bacon: :egg: :green_salad: :bowl_with_spoon:
+
 :popcorn: :salt: :curry: :spaghetti: :fried_shrimp:
+
 :crab: :lobster: :shrimp: :squid: :oyster: 
 
 
