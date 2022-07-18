@@ -4,9 +4,9 @@ This program in java is useful for cooking bar of recipes.
 
 :grapes: :pineapple: :cherries: :tomato: :strawberry:
 
-:potato: :carrot: :onion: :mushroom: :garlic: :corn:
+:potato: :carrot: :onion: :mushroom: :garlic:
 
-:bread: :cheese: :cut_of_meat: :bacon: :egg: :green_salad:
+:bread: :cheese: :bacon: :egg: :green_salad:
 
 :popcorn: :salt: :curry: :spaghetti: :fried_shrimp:
 
