@@ -8,9 +8,9 @@ This program in java is useful for cooking bar of recipes.
 
 :bread: :cheese: :bacon: :egg: :green_salad:
 
-:popcorn:  :salt: :curry: :spaghetti: :fried_shrimp:
-
 :crab: :lobster: :shrimp: :squid: :oyster:
+
+:popcorn:  :salt: :curry: :spaghetti: :fried_shrimp:
 
 
 ---
