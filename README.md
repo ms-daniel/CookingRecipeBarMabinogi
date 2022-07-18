@@ -2,9 +2,9 @@
 
 This program in java is useful for cooking bar of recipes.
 
-:grapes: :pineapple: :apple: :cherries: :tomato: :green_apple: :strawberry:
+:grapes: :pineapple: :cherries: :tomato: :strawberry:
 
-:potato: :carrot: :hot_pepper: :onion: :mushroom: :garlic: :corn:
+:potato: :carrot: :onion: :mushroom: :garlic: :corn:
 
 :bread: :cheese: :cut_of_meat: :bacon: :egg: :green_salad: :bowl_with_spoon:
 
