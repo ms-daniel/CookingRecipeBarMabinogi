@@ -3,7 +3,7 @@
 This program in java is useful for cooking bar of recipes.
 |   |   |   |   |   |   |
 |---|---|---|---|---|---|
-|     |     |     |     |     |
+|:grapes: :pineapple: :cherries: :tomato: :strawberry:|   :potato: :carrot: :onion: :mushroom: :garlic:  |     |     |     |
 
 :grapes: :pineapple: :cherries: :tomato: :strawberry:
 
