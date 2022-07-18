@@ -10,7 +10,7 @@ This program in java is useful for cooking bar of recipes.
 
 :popcorn: :salt: :curry: :spaghetti: :fried_shrimp:
 
-:crab: :lobster: :shrimp: :squid: :oyster: 
+:crab: :lobster: :shrimp: :squid: :oyster:
 
 
 ---
