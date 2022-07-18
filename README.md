@@ -1,7 +1,7 @@
 # Cooking Recipe Bar - Mabinogi
 
 This program in java is useful for cooking bar of recipes.
-
+|   |   |   |   |   |   |
 |---|---|---|---|---|---|
 |     |     |     |     |     |
 
