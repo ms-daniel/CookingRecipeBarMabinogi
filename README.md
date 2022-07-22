@@ -2,7 +2,8 @@
 
 This program in java is useful for cooking bar of recipes.
 
-[![Download](https://github.com/ms-daniel/justimagens/blob/main/downloadbutton.png "Download")]()
+Download (Click in icon)
+[![Download](https://github.com/ms-daniel/justimagens/blob/main/downloadbutton.png)]()
 
 |:grapes: :pineapple: :cherries: :tomato: :strawberry:|   :potato: :carrot: :onion: :mushroom: :garlic:  |  :bread: :cheese: :bacon: :egg: :green_salad:   |   :crab: :lobster: :shrimp: :squid: :oyster:  |  :popcorn:  :salt: :curry: :spaghetti: :fried_shrimp:
 |---|---|---|---|---|
