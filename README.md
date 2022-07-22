@@ -1,5 +1,3 @@
-# Cooking Recipe Bar - Mabinogi
-
 ![](https://github.com/ms-daniel/justimagens/blob/main/cooking_logo.png)
 
 This program in java is useful for cooking bar of recipes.
