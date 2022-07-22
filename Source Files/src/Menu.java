@@ -8,6 +8,7 @@ import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
@@ -44,6 +45,9 @@ public class Menu {
 	private Object[] stir_frying = {""};
 	
 	private Insets margem = new Insets(0,0,0,0);
+	
+	private ImageIcon img_I = new ImageIcon(
+			getClass().getClassLoader().getResource("cooking.png"));
 	
 	public void GetMenu() {
 		texto = new JLabel();
@@ -104,7 +108,7 @@ public class Menu {
 		janela.getContentPane().add(size);
 		
 		
-		//ações botões
+		//aï¿½ï¿½es botï¿½es
 		ok.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				recipeS = (String)recipes.getSelectedItem();
@@ -135,7 +139,7 @@ public class Menu {
 		janela.setBounds(0, 0, 185, 220);
 		janela.setLocationRelativeTo(null); //alinha a janela no centro da tela
 		janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		//janela.setIconImage(this.logo_icon.getImage()); //define o icone da aplicação
+		janela.setIconImage(img_I.getImage()); //define o icone da aplicaï¿½ï¿½o
 //		janela.getContentPane().setBackground(Color.BLACK);
 		janela.getContentPane().setLayout(null);
 		
