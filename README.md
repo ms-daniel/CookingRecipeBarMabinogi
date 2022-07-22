@@ -2,7 +2,7 @@
 
 This program in java is useful for cooking bar of recipes.
 
-[![Download](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white)](https://github.com/DenverCoder1/readme-download-button-action/blob/main/README.md)
+[![Download](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white)](https://github.com/ms-daniel/CookingRecipeBarMabinogi/raw/master/CookingRecipeBarMabinogi.jar)
 
 
 
