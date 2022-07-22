@@ -4,7 +4,7 @@ This program in java is useful for cooking bar of recipes.
 
 Download (Click in icon) [![Download](https://github.com/ms-daniel/justimagens/blob/main/downloadbutton.png)](https://github.com/DenverCoder1/readme-download-button-action/blob/main/README.md)
 
-[![Download]<img src="https://github.com/ms-daniel/justimagens/blob/main/downloadbutton.png" width="400" height="790">
+[![Download]<img src="https://github.com/ms-daniel/justimagens/blob/main/downloadbutton.png" width="32" height="32">
 
 |:grapes: :pineapple: :cherries: :tomato: :strawberry:|   :potato: :carrot: :onion: :mushroom: :garlic:  |  :bread: :cheese: :bacon: :egg: :green_salad:   |   :crab: :lobster: :shrimp: :squid: :oyster:  |  :popcorn:  :salt: :curry: :spaghetti: :fried_shrimp:
 |---|---|---|---|---|
