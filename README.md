@@ -1,5 +1,7 @@
 # Cooking Recipe Bar - Mabinogi
 
+![Logo](https://github.com/ms-daniel/justimagens/blob/main/cooking_logo.png)
+
 This program in java is useful for cooking bar of recipes.
 
 [![Download](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white)](https://github.com/ms-daniel/CookingRecipeBarMabinogi/raw/master/CookingRecipeBarMabinogi.jar)
