@@ -2,7 +2,7 @@
 
 This program in java is useful for cooking bar of recipes.
 
-[![Downloads](https://github.com/ms-daniel/CookingRecipeBarMabinogi/blob/master/CookingRecipeBarMabinogi.jar)](https://raw.githubusercontent.com/topjohnwu/magisk-files/count/count.json)
+[![Downloads](https://github.com/ms-daniel/CookingRecipeBarMabinogi/blob/master/CookingRecipeBarMabinogi.jar)]()
 
 |:grapes: :pineapple: :cherries: :tomato: :strawberry:|   :potato: :carrot: :onion: :mushroom: :garlic:  |  :bread: :cheese: :bacon: :egg: :green_salad:   |   :crab: :lobster: :shrimp: :squid: :oyster:  |  :popcorn:  :salt: :curry: :spaghetti: :fried_shrimp:
 |---|---|---|---|---|
