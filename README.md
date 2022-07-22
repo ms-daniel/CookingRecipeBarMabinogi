@@ -2,7 +2,7 @@
 
 This program in java is useful for cooking bar of recipes.
 
-Download (Click in icon) [![Download](<img src="https://github.com/ms-daniel/justimagens/blob/main/downloadbutton.png" width="32" height="32">)](https://github.com/DenverCoder1/readme-download-button-action/blob/main/README.md)
+Download (Click in icon) [![Download](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white)](https://github.com/DenverCoder1/readme-download-button-action/blob/main/README.md)
 
 
 
