@@ -1,4 +1,4 @@
-![](https://github.com/ms-daniel/justimagens/blob/main/cooking_logo.png)
+![](https://github.com/ms-daniel/justimagens/blob/main/cooking_logo2.png)
 
 This program in java is useful for cooking bar of recipes.
 
