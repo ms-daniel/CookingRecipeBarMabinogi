@@ -50,7 +50,7 @@ public class Operations {
 	private void Bar() {
 		JFrame jan = new JFrame();
 		jan.setUndecorated(true);
-		jan.setBounds(351, 690, 360, 15);
+		jan.setBounds(351, 690, 360, 27);
 		jan.setBackground(new Color(1.0f,1.0f,1.0f,0.1f));
 		jan.setVisible(true);
 		jan.setLayout(null);
@@ -75,7 +75,7 @@ public class Operations {
 		
 		bar_img = new JLabel();
 		bar_img.setIcon(img);
-		bar_img.setBounds(0, -9, 300, 30);
+		bar_img.setBounds(0, -9, 300, 40);
 		
 		jan.getContentPane().add(bar_img);
 		jan.getContentPane().add(close);

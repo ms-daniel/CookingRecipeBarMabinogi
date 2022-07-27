@@ -38,7 +38,7 @@ public class Menu {
 	private Object[] mixing = {"Tomato Basil Salad", "Lemonade"};
 	private Object[] simmering = {"Steamed Potato"};
 	private Object[] baking = {""};
-	private Object[] kneading = {"Flour Dough"};
+	private Object[] kneading = {"Flour Dough", "Fry Batter"};
 	private Object[] boiling = {"Basil Tea","Cheese Fondue", "Starch Syrup"};
 	private Object[] noodle = {"Noodle"};
 	private Object[] deep_frying = {"Glazed Sweet Potatoes"};
