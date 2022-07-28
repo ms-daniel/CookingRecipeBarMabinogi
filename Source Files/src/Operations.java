@@ -21,7 +21,7 @@ import javax.swing.JOptionPane;
 
 public class Operations {
 	private String recipe;
-	private float size;
+	private double size;
 	
 	private Point point = new Point();
 	
@@ -38,7 +38,7 @@ public class Operations {
 	
 	private Insets margem = new Insets(0,0,0,0);
 	
-	public Operations(String recipe, float size) {
+	public Operations(String recipe, double size) {
 		this.recipe = recipe;
 		this.size = size;
 		

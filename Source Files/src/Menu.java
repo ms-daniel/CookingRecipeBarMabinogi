@@ -14,15 +14,15 @@ import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-import javax.swing.JTextField;
 
 public class Menu {
 	private JFrame janela;
 	
 	private JLabel texto;
-	private JLabel size;
+	private JLabel Lresolution;
 	
-	private JTextField field;
+	private JComboBox ComboResolution;
+	private Object[] resolution = {"1920x1080", "1280x720"};
 	
 	private String recipeS;
 	private float tamanho;
@@ -90,22 +90,22 @@ public class Menu {
 		cancel.setFocusable(false);
 		cancel.setEnabled(true);
 		
-		size = new JLabel();
-		size.setText("Size of bar(cm)");
-		size.setBounds(38, 95, 120, 30);
-		size.setFont(new Font("Arial", Font.BOLD, 13));
+		Lresolution = new JLabel();
+		Lresolution.setText("Screen Game Resolution");
+		Lresolution.setBounds(15, 95, 200, 30);
+		Lresolution.setFont(new Font("Arial", Font.BOLD, 12));
 		
-		field = new JTextField("6.7");
-		field.setBounds(35, 120, 100, 20);
-		field.setHorizontalAlignment(JTextField.CENTER);
+		ComboResolution = new JComboBox(resolution);
+		ComboResolution.setBounds(10, 120, 150, 20);
+		ComboResolution.setFont(new Font("Arial", Font.BOLD, 12));
 		
 		janela.getContentPane().add(texto);
 		janela.getContentPane().add(rec);
 		janela.getContentPane().add(recipes);
 		janela.getContentPane().add(ok);
 		janela.getContentPane().add(cancel);
-		janela.getContentPane().add(field);
-		janela.getContentPane().add(size);
+		janela.getContentPane().add(ComboResolution);
+		janela.getContentPane().add(Lresolution);
 		
 		
 		//a��es bot�es
@@ -113,8 +113,8 @@ public class Menu {
 			public void actionPerformed(ActionEvent arg0) {
 				recipeS = (String)recipes.getSelectedItem();
 				try {
-					tamanho = Float.parseFloat(field.getText());
-					Operations op = new Operations(recipeS, tamanho);
+					//tamanho = Float.parseFloat(ComboResolution.getName());
+					Operations op = new Operations(recipeS, 6.7);
 					
 					//System.out.println(tamanho);
 				}catch(NumberFormatException E) {
