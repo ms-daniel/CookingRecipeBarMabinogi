@@ -114,7 +114,7 @@ public class Menu {
 				recipeS = (String)recipes.getSelectedItem();
 				try {
 					//tamanho = Float.parseFloat(ComboResolution.getName());
-					Operations op = new Operations(recipeS, 6.7);
+					Operations op = new Operations(recipeS, (String)ComboResolution.getSelectedItem());
 					
 					//System.out.println(tamanho);
 				}catch(NumberFormatException E) {

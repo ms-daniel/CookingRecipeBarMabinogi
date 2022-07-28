@@ -21,7 +21,7 @@ import javax.swing.JOptionPane;
 
 public class Operations {
 	private String recipe;
-	private double size;
+	private String resolution;
 	
 	private Point point = new Point();
 	
@@ -38,9 +38,9 @@ public class Operations {
 	
 	private Insets margem = new Insets(0,0,0,0);
 	
-	public Operations(String recipe, double size) {
+	public Operations(String recipe, String resolution) {
 		this.recipe = recipe;
-		this.size = size;
+		this.resolution = resolution;
 		
 		CountQt();
 		Bar();
@@ -56,7 +56,7 @@ public class Operations {
 		jan.setAlwaysOnTop(true);
 		
 		try {
-			img = new ImageIcon(getClass().getClassLoader().getResource(recipe + " " + size +".png"));
+			img = new ImageIcon(getClass().getClassLoader().getResource(resolution + "/" + recipe + ".png"));
 		}catch(NullPointerException e) {
 			JOptionPane.showMessageDialog(jan, "This recipe doesn't exist yet.");
 			jan.setVisible(false);
