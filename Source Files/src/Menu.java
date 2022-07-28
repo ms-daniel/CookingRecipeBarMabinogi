@@ -7,6 +7,14 @@ import java.awt.Insets;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -16,6 +24,10 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 public class Menu {
+	private BufferedReader br = null;
+	private String[] dados;
+	//private boolean same_resolution = false;
+	
 	private JFrame janela;
 	
 	private JLabel texto;
@@ -99,6 +111,8 @@ public class Menu {
 		ComboResolution.setBounds(10, 120, 150, 20);
 		ComboResolution.setFont(new Font("Arial", Font.BOLD, 12));
 		
+		getResolution(ComboResolution); //verificar se há resolução salva anteriormente
+		
 		janela.getContentPane().add(texto);
 		janela.getContentPane().add(rec);
 		janela.getContentPane().add(recipes);
@@ -107,14 +121,25 @@ public class Menu {
 		janela.getContentPane().add(ComboResolution);
 		janela.getContentPane().add(Lresolution);
 		
+		//aciona uma acao quando troca o item do combobox de resolução de tela
+		ComboResolution.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+					setResolution((String)ComboResolution.getSelectedItem());
+			}
+		});
 		
-		//aï¿½ï¿½es botï¿½es
+		
+		//quando pressiona o botao de select
 		ok.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				//atribui a String(nome da receita selecionada no combobox) do combobox
 				recipeS = (String)recipes.getSelectedItem();
+				
 				try {
-					//tamanho = Float.parseFloat(ComboResolution.getName());
-					Operations op = new Operations(recipeS, (String)ComboResolution.getSelectedItem());
+					//chama a criação da barra com os parametros nome da receita, resolução usada na receita e as coordenadas x e y da barra
+					// que estão no arquivo configs 
+					Operations op = new Operations(recipeS, (String)ComboResolution.getSelectedItem(),
+							Integer.parseInt(dados[1]), Integer.parseInt(dados[2]));
 					
 					//System.out.println(tamanho);
 				}catch(NumberFormatException E) {
@@ -199,8 +224,81 @@ public class Menu {
 		
 	}
 	
-	public void check() {
-		System.out.println("aqui estou eu");
+	//abre o arquivo para ler a resolução anterior
+	private void getResolution(JComboBox resol) {
+		//criação do buffer para abrir arquivo txt contendo informações
+		try {
+			String linha;
+			
+			//abre arquivo
+	        br = new BufferedReader(new FileReader("data/configs.txt"));
+	        
+	        
+	        linha = br.readLine();
+	        if(linha!=null) {
+	        	this.dados = linha.split(",");
+	        	
+	        	if(!resol.getItemAt(0).equals(dados[0])) {
+		        	resol.setSelectedIndex(1);
+	        	}
+	        }else {
+	        	this.dados = new String(" , , ").split(",");
+	        }
+
+
+	    } catch (FileNotFoundException e) {
+	    	e.printStackTrace();
+	    } catch (IOException e) {
+	        e.printStackTrace();
+	    } catch(ArrayIndexOutOfBoundsException e){
+	    	e.printStackTrace();
+	    }finally {
+	        if (br != null) {
+	            try {
+	                br.close();
+	            } catch (IOException e) {
+	                e.printStackTrace();
+	            }
+	        }
+	    }
+	}
+	
+	//metodo usado para mudar a resolução no arquivo
+	private void setResolution(String resol) {
+		dados[0] = new String(resol);
+		
+		String save = dados[0] + "," + dados[1] + "," + dados[2];
+	
+			
+		
+		File arq = new File("data", "configs.txt");
+		
+		//caso o arquivo não exista ele irá criar
+		if(!arq.exists()) {
+			try {
+				arq.createNewFile();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+		try {
+			//criamos um arquivo "escrevivel"
+			FileWriter esc_arq = new FileWriter(arq, false);
+			
+			//usamos a classe printwirter para poder escrever nele
+			PrintWriter escrever = new PrintWriter(esc_arq);
+			
+			//escrevemos
+			escrever.println(save);
+			escrever.close();
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+			
 	}
 	
 }

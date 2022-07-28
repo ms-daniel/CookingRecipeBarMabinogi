@@ -20,6 +20,8 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 public class Operations {
+	private int cord_x, cord_y;
+	
 	private String recipe;
 	private String resolution;
 	
@@ -38,19 +40,20 @@ public class Operations {
 	
 	private Insets margem = new Insets(0,0,0,0);
 	
-	public Operations(String recipe, String resolution) {
+	public Operations(String recipe, String resolution, int x, int y) {
 		this.recipe = recipe;
 		this.resolution = resolution;
+		this.cord_x = x;
+		this.cord_y = y;
 		
 		CountQt();
 		Bar();
-		
 	}
 	
 	private void Bar() {
 		JFrame jan = new JFrame();
 		jan.setUndecorated(true);
-		jan.setBounds(351, 690, 360, 27);
+		jan.setBounds(cord_x, cord_y, 360, 27);
 		jan.setBackground(new Color(1.0f,1.0f,1.0f,0.1f));
 		jan.setLayout(null);
 		jan.setAlwaysOnTop(true);
