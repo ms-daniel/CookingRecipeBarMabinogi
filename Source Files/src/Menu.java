@@ -32,6 +32,7 @@ public class Menu {
 	
 	private JLabel texto;
 	private JLabel Lresolution;
+	private JLabel version;
 	
 	private JComboBox ComboResolution;
 	private Object[] resolution = {"1920x1080", "1280x720"};
@@ -67,6 +68,11 @@ public class Menu {
 		texto.setBounds(25, 5, 120, 15);
 		texto.setFont(new Font("Arial", Font.BOLD, 13));
 		
+		version = new JLabel();
+		version.setText("v0.3.1");
+		version.setBounds(70, 140, 90, 15);
+		version.setFont(new Font("Arial", 0, 10));
+		
 		
 		rec = new JComboBox(type);
 		rec.setBounds(10, 25, 150, 30);
@@ -83,7 +89,7 @@ public class Menu {
 		});
 		
 		ok = new JButton("SELECT");
-		ok.setBounds(10, 150, 70, 25);
+		ok.setBounds(10, 155, 70, 25);
 		ok.setMargin(margem);
 		ok.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		ok.setFont(new Font("Arial", Font.BOLD, 13));
@@ -93,7 +99,7 @@ public class Menu {
 		ok.setEnabled(true);
 		
 		cancel = new JButton("CANCEL");
-		cancel.setBounds(90, 150, 70, 25);
+		cancel.setBounds(90, 155, 70, 25);
 		cancel.setMargin(margem);
 		cancel.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		cancel.setFont(new Font("Arial", Font.BOLD, 13));
@@ -120,6 +126,7 @@ public class Menu {
 		janela.getContentPane().add(cancel);
 		janela.getContentPane().add(ComboResolution);
 		janela.getContentPane().add(Lresolution);
+		janela.getContentPane().add(version);
 		
 		//aciona uma acao quando troca o item do combobox de resolução de tela
 		ComboResolution.addActionListener(new ActionListener() {
@@ -160,7 +167,7 @@ public class Menu {
 	public JFrame Criarjanela() {
 		janela = new JFrame();
 		//janela.setUndecorated(true);
-		janela.setBounds(0, 0, 185, 220);
+		janela.setBounds(0, 0, 185, 225);
 		janela.setLocationRelativeTo(null); //alinha a janela no centro da tela
 		janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		janela.setIconImage(img_I.getImage()); //define o icone da aplicaï¿½ï¿½o
