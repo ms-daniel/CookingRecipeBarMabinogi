@@ -52,7 +52,6 @@ public class Operations {
 		jan.setUndecorated(true);
 		jan.setBounds(351, 690, 360, 27);
 		jan.setBackground(new Color(1.0f,1.0f,1.0f,0.1f));
-		jan.setVisible(true);
 		jan.setLayout(null);
 		jan.setAlwaysOnTop(true);
 		
@@ -64,7 +63,7 @@ public class Operations {
 		}
 		
 		close = new JButton("X");
-		close.setBounds(300, 1, 15, 15);
+		close.setBounds(300, 0, 15, 15);
 		close.setMargin(margem);
 		close.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		close.setFont(new Font("Arial", Font.BOLD, 13));
@@ -98,6 +97,8 @@ public class Operations {
 		        jan.setLocation(p.x + e.getX() - point.x, p.y + e.getY() - point.y);
 		      }
 		    });
+		 
+		 jan.setVisible(true);
 		
 	}
 	
