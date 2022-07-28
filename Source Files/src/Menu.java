@@ -33,6 +33,8 @@ public class Menu {
 	private Object[] resolution = {"1920x1080", "1280x720"};
 	
 	private String recipeS;
+	private JComboBox recipes;
+	private JComboBox rec;
 	
 	private Object[] type = {"Mixing", "Baking", "Simmering", "Kneading", "Boiling", "Noodle Making", "Deep-frying", "Stir-frying"};
 	
@@ -63,11 +65,11 @@ public class Menu {
 		version.setFont(new Font("Arial", 0, 10));
 		
 		
-		JComboBox rec = new JComboBox(type);
+		rec = new JComboBox(type);
 		rec.setBounds(10, 25, 150, 30);
 		rec.setFont(new Font("Arial", Font.BOLD, 13));
 		
-		JComboBox recipes = new JComboBox(mixing);
+		recipes = new JComboBox(mixing);
 		recipes.setBounds(10, 65, 150, 30);
 		recipes.setFont(new Font("Arial", Font.BOLD, 13));
 		
