@@ -26,7 +26,7 @@ import javax.swing.JOptionPane;
 public class Menu {
 	private BufferedReader br = null;
 	private String[] dados;
-	//private boolean same_resolution = false;
+	private Operations op = new Operations(); //cria instancia da classe que ira trabalhar com a barra em popup
 	
 	private JFrame janela;
 	
@@ -138,8 +138,7 @@ public class Menu {
 				try {
 					//chama a criação da barra com os parametros nome da receita, resolução usada na receita e as coordenadas x e y da barra
 					// que estão no arquivo configs 
-					Operations op = new Operations(recipeS, (String)ComboResolution.getSelectedItem(),
-							Integer.parseInt(dados[1]), Integer.parseInt(dados[2]));
+					op.runBar(recipeS, (String)ComboResolution.getSelectedItem(), dados);
 					
 					//System.out.println(tamanho);
 				}catch(NumberFormatException E) {

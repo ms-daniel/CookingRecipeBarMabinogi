@@ -9,7 +9,10 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.net.URI;
 import java.net.URISyntaxException;
 
@@ -20,11 +23,16 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 public class Operations {
+	private String[] dados;
 	private int cord_x, cord_y;
 	
+	//nome da receita
 	private String recipe;
+	
+	//nome da pasta onde esta a receita com a resolucao escolhida 
 	private String resolution;
 	
+	//classe usada para mover a janela com o mouse e ela ir se auto ajustando
 	private Point point = new Point();
 	
 	private boolean mouseEstado = false;
@@ -40,11 +48,12 @@ public class Operations {
 	
 	private Insets margem = new Insets(0,0,0,0);
 	
-	public Operations(String recipe, String resolution, int x, int y) {
+	public void runBar(String recipe, String resolution, String[] dados) {
 		this.recipe = recipe;
 		this.resolution = resolution;
-		this.cord_x = x;
-		this.cord_y = y;
+		this.dados = dados;
+		this.cord_x = Integer.parseInt(dados[1]);
+		this.cord_y = Integer.parseInt(dados[2]);
 		
 		CountQt();
 		Bar();
@@ -88,6 +97,9 @@ public class Operations {
 			}
 		});
 		
+		//esses eventos são de quando o usuario puxa a janela pop-up.
+		//assim que esse evento acontece o programa vai capturando a posição do mouse
+		//para mover a janela junto
 		jan.addMouseListener(new MouseAdapter() {
 		      public void mousePressed(MouseEvent e) {
 		        point.x = e.getX();
@@ -97,7 +109,15 @@ public class Operations {
 		 jan.addMouseMotionListener(new MouseMotionAdapter() {
 		      public void mouseDragged(MouseEvent e) {
 		        Point p = jan.getLocation();
-		        jan.setLocation(p.x + e.getX() - point.x, p.y + e.getY() - point.y);
+		        
+		        cord_x = p.x + e.getX() - point.x;
+		        cord_y = p.y + e.getY() - point.y;
+		        
+		        dados[1] = String.valueOf(cord_x);
+		        dados[2] = String.valueOf(cord_y);
+		        
+		        jan.setLocation(cord_x, cord_y);
+		        setXandY();
 		      }
 		    });
 		 
@@ -124,6 +144,40 @@ public class Operations {
 		//jan.setBackground(new Color(1.0f,1.0f,1.0f,0.1f));
 		jan.setVisible(true);
 		jan.setLayout(null);
+	}
+	
+	//usado para mudar o X e Y dentro do arquivo configs (segundo e terceiro elementos)
+	private void setXandY() {
+		String save = dados[0] + "," + dados[1] + "," + dados[2];
+
+		File arq = new File("data", "configs.txt");
+		
+		//caso o arquivo não exista ele irá criar
+		if(!arq.exists()) {
+			try {
+				arq.createNewFile();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+		try {
+			//criamos um arquivo "escrevivel"
+			FileWriter esc_arq = new FileWriter(arq, false);
+			
+			//usamos a classe printwirter para poder escrever nele
+			PrintWriter escrever = new PrintWriter(esc_arq);
+			
+			//escrevemos
+			escrever.println(save);
+			escrever.close();
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+			
 	}
 	
 }
