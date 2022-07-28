@@ -27,7 +27,7 @@ Is very simple!
 You can just do download of the .java programa or download the all code __(if you know how to use it)__.
 When you open it y'll have the interface of image 1. 
 
-![Image 1](https://github.com/danknightt/justimagens/blob/main/interface.png)
+![Image 1](https://github.com/danknightt/justimagens/blob/main/interface.jpg)
 
 ![Image 2](https://i.pinimg.com/originals/9a/a6/f8/9aa6f87c65de1ce262cb81200dd387a4.gif)
 
