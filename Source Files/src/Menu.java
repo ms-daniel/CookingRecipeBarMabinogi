@@ -70,7 +70,7 @@ public class Menu {
 		
 		version = new JLabel();
 		version.setText("v0.3.1");
-		version.setBounds(70, 140, 90, 15);
+		version.setBounds(70, 135, 90, 15);
 		version.setFont(new Font("Arial", 0, 10));
 		
 		
@@ -89,7 +89,7 @@ public class Menu {
 		});
 		
 		ok = new JButton("SELECT");
-		ok.setBounds(10, 155, 70, 25);
+		ok.setBounds(10, 150, 70, 25);
 		ok.setMargin(margem);
 		ok.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		ok.setFont(new Font("Arial", Font.BOLD, 13));
@@ -99,7 +99,7 @@ public class Menu {
 		ok.setEnabled(true);
 		
 		cancel = new JButton("CANCEL");
-		cancel.setBounds(90, 155, 70, 25);
+		cancel.setBounds(90, 150, 70, 25);
 		cancel.setMargin(margem);
 		cancel.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		cancel.setFont(new Font("Arial", Font.BOLD, 13));
@@ -110,11 +110,11 @@ public class Menu {
 		
 		Lresolution = new JLabel();
 		Lresolution.setText("Screen Game Resolution");
-		Lresolution.setBounds(15, 95, 200, 30);
+		Lresolution.setBounds(15, 90, 200, 30);
 		Lresolution.setFont(new Font("Arial", Font.BOLD, 12));
 		
 		ComboResolution = new JComboBox(resolution);
-		ComboResolution.setBounds(10, 120, 150, 20);
+		ComboResolution.setBounds(10, 115, 150, 20);
 		ComboResolution.setFont(new Font("Arial", Font.BOLD, 12));
 		
 		getResolution(ComboResolution); //verificar se há resolução salva anteriormente
@@ -167,7 +167,7 @@ public class Menu {
 	public JFrame Criarjanela() {
 		janela = new JFrame();
 		//janela.setUndecorated(true);
-		janela.setBounds(0, 0, 185, 225);
+		janela.setBounds(0, 0, 185, 220);
 		janela.setLocationRelativeTo(null); //alinha a janela no centro da tela
 		janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		janela.setIconImage(img_I.getImage()); //define o icone da aplicaï¿½ï¿½o
