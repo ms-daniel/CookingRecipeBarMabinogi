@@ -29,22 +29,10 @@ public class Menu {
 	private Operations op = new Operations(); //cria instancia da classe que ira trabalhar com a barra em popup
 	
 	private JFrame janela;
-	
-	private JLabel texto;
-	private JLabel Lresolution;
-	private JLabel version;
-	
-	private JComboBox ComboResolution;
+
 	private Object[] resolution = {"1920x1080", "1280x720"};
 	
 	private String recipeS;
-	private float tamanho;
-	
-	private JButton ok;
-	private JButton cancel;
-	
-	private JComboBox rec;
-	private JComboBox recipes;
 	
 	private Object[] type = {"Mixing", "Baking", "Simmering", "Kneading", "Boiling", "Noodle Making", "Deep-frying", "Stir-frying"};
 	
@@ -63,22 +51,23 @@ public class Menu {
 			getClass().getClassLoader().getResource("cooking.png"));
 	
 	public void GetMenu() {
-		texto = new JLabel();
+		
+		JLabel texto = new JLabel();
 		texto.setText("Choice the recipe");
 		texto.setBounds(25, 5, 120, 15);
 		texto.setFont(new Font("Arial", Font.BOLD, 13));
 		
-		version = new JLabel();
+		JLabel version = new JLabel();
 		version.setText("v0.3.1");
 		version.setBounds(70, 135, 90, 15);
 		version.setFont(new Font("Arial", 0, 10));
 		
 		
-		rec = new JComboBox(type);
+		JComboBox rec = new JComboBox(type);
 		rec.setBounds(10, 25, 150, 30);
 		rec.setFont(new Font("Arial", Font.BOLD, 13));
 		
-		recipes = new JComboBox(mixing);
+		JComboBox recipes = new JComboBox(mixing);
 		recipes.setBounds(10, 65, 150, 30);
 		recipes.setFont(new Font("Arial", Font.BOLD, 13));
 		
@@ -88,7 +77,7 @@ public class Menu {
 		    }
 		});
 		
-		ok = new JButton("SELECT");
+		JButton ok = new JButton("SELECT");
 		ok.setBounds(10, 150, 70, 25);
 		ok.setMargin(margem);
 		ok.setCursor(new Cursor(Cursor.HAND_CURSOR));
@@ -98,7 +87,7 @@ public class Menu {
 		ok.setFocusable(false);
 		ok.setEnabled(true);
 		
-		cancel = new JButton("CANCEL");
+		JButton cancel = new JButton("CANCEL");
 		cancel.setBounds(90, 150, 70, 25);
 		cancel.setMargin(margem);
 		cancel.setCursor(new Cursor(Cursor.HAND_CURSOR));
@@ -108,16 +97,17 @@ public class Menu {
 		cancel.setFocusable(false);
 		cancel.setEnabled(true);
 		
-		Lresolution = new JLabel();
+		JLabel Lresolution = new JLabel();
 		Lresolution.setText("Screen Game Resolution");
 		Lresolution.setBounds(15, 90, 200, 30);
 		Lresolution.setFont(new Font("Arial", Font.BOLD, 12));
 		
-		ComboResolution = new JComboBox(resolution);
+		JComboBox ComboResolution = new JComboBox(resolution);
 		ComboResolution.setBounds(10, 115, 150, 20);
 		ComboResolution.setFont(new Font("Arial", Font.BOLD, 12));
 		
 		getResolution(ComboResolution); //verificar se há resolução salva anteriormente
+		
 		
 		janela.getContentPane().add(texto);
 		janela.getContentPane().add(rec);
@@ -146,8 +136,7 @@ public class Menu {
 					//chama a criação da barra com os parametros nome da receita, resolução usada na receita e as coordenadas x e y da barra
 					// que estão no arquivo configs 
 					op.runBar(recipeS, (String)ComboResolution.getSelectedItem(), dados);
-					
-					//System.out.println(tamanho);
+
 				}catch(NumberFormatException E) {
 					JOptionPane.showMessageDialog(janela, "Invalid number format");
 				}
@@ -166,12 +155,10 @@ public class Menu {
 	
 	public JFrame Criarjanela() {
 		janela = new JFrame();
-		//janela.setUndecorated(true);
 		janela.setBounds(0, 0, 185, 220);
 		janela.setLocationRelativeTo(null); //alinha a janela no centro da tela
 		janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		janela.setIconImage(img_I.getImage()); //define o icone da aplicaï¿½ï¿½o
-//		janela.getContentPane().setBackground(Color.BLACK);
+		janela.setIconImage(img_I.getImage()); //define o icone
 		janela.getContentPane().setLayout(null);
 		
 		return janela;
