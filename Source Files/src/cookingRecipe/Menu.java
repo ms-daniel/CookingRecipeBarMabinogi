@@ -23,11 +23,15 @@ import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import javax.swing.plaf.basic.BasicComboBoxRenderer;
 
 public class Menu {
+	//instancia para recebr as Strings com os nomes das receitas
 	private recipeList RL = new recipeList();
+	
 	private BufferedReader br = null;
 	private String[] dados;
+	
 	private Operations op = new Operations(); //cria instancia da classe que ira trabalhar com a barra em popup
 	
 	private JFrame janela;
@@ -39,8 +43,7 @@ public class Menu {
 	private JComboBox rec;
 	
 	private Object[] type = {"Mixing", "Baking", "Simmering", "Kneading", "Boiling", "Noodle Making", "Deep-frying", "Stir-frying"};
-	
-	//private Object[] mixing = receitas.getMixing();
+
 	private Object[] simmering = {"Steamed Potato"};
 	private Object[] baking = {""};
 	private Object[] kneading = {"Flour Dough", "Fry Batter"};
@@ -49,6 +52,9 @@ public class Menu {
 	private Object[] deep_frying = {"Glazed Sweet Potatoes"};
 	private Object[] stir_frying = {""};
 	
+	//============================================================
+	
+	//============================================================
 	private Insets margem = new Insets(0,0,0,0);
 	
 	private ImageIcon img_I = new ImageIcon(
@@ -56,23 +62,25 @@ public class Menu {
 	
 	public void GetMenu() {
 		
+		
 		JLabel texto = new JLabel();
 		texto.setText("Choice the recipe");
-		texto.setBounds(25, 5, 120, 15);
+		texto.setBounds(45, 5, 120, 15);
 		texto.setFont(new Font("Arial", Font.BOLD, 13));
 		
 		JLabel version = new JLabel();
 		version.setText("v0.3.2");
-		version.setBounds(70, 135, 90, 15);
+		version.setBounds(90, 135, 90, 15);
 		version.setFont(new Font("Arial", 0, 10));
 		
 		
 		rec = new JComboBox(type);
-		rec.setBounds(10, 25, 150, 30);
+		rec.setBounds(10, 25, 185, 30);
 		rec.setFont(new Font("Arial", Font.BOLD, 13));
 		
 		recipes = new JComboBox(RL.mixing);
-		recipes.setBounds(10, 65, 150, 30);
+		recipes.setBounds(10, 65, 185, 30);
+		
 		recipes.setFont(new Font("Arial", Font.BOLD, 13));
 		
 		rec.addActionListener (new ActionListener () { //quando mudar o combobox
@@ -82,7 +90,7 @@ public class Menu {
 		});
 		
 		JButton ok = new JButton("SELECT");
-		ok.setBounds(10, 150, 70, 25);
+		ok.setBounds(10, 150, 90, 25);
 		ok.setMargin(margem);
 		ok.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		ok.setFont(new Font("Arial", Font.BOLD, 13));
@@ -92,7 +100,7 @@ public class Menu {
 		ok.setEnabled(true);
 		
 		JButton cancel = new JButton("CANCEL");
-		cancel.setBounds(90, 150, 70, 25);
+		cancel.setBounds(105, 150, 90, 25);
 		cancel.setMargin(margem);
 		cancel.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		cancel.setFont(new Font("Arial", Font.BOLD, 13));
@@ -103,14 +111,14 @@ public class Menu {
 		
 		JLabel Lresolution = new JLabel();
 		Lresolution.setText("Screen Game Resolution");
-		Lresolution.setBounds(15, 90, 200, 30);
+		Lresolution.setBounds(35, 90, 200, 30);
 		Lresolution.setFont(new Font("Arial", Font.BOLD, 12));
 		
 		JComboBox ComboResolution = new JComboBox(resolution);
-		ComboResolution.setBounds(10, 115, 150, 20);
+		ComboResolution.setBounds(10, 115, 185, 20);
 		ComboResolution.setFont(new Font("Arial", Font.BOLD, 12));
 		
-		getResolution(ComboResolution); //verificar se há resolução salva anteriormente
+		getResolution(ComboResolution); //verificar se hï¿½ resoluï¿½ï¿½o salva anteriormente
 		
 		
 		janela.getContentPane().add(texto);
@@ -122,7 +130,7 @@ public class Menu {
 		janela.getContentPane().add(Lresolution);
 		janela.getContentPane().add(version);
 		
-		//aciona uma acao quando troca o item do combobox de resolução de tela
+		//aciona uma acao quando troca o item do combobox de resoluï¿½ï¿½o de tela
 		ComboResolution.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 					setResolution((String)ComboResolution.getSelectedItem());
@@ -137,8 +145,8 @@ public class Menu {
 				recipeS = (String)recipes.getSelectedItem();
 				
 				try {
-					//chama a criação da barra com os parametros nome da receita, resolução usada na receita e as coordenadas x e y da barra
-					// que estão no arquivo configs 
+					//chama a criaï¿½ï¿½o da barra com os parametros nome da receita, resoluï¿½ï¿½o usada na receita e as coordenadas x e y da barra
+					// que estï¿½o no arquivo configs 
 					op.runBar(recipeS, (String)ComboResolution.getSelectedItem(), dados);
 
 				}catch(NumberFormatException E) {
@@ -159,7 +167,7 @@ public class Menu {
 	
 	public JFrame Criarjanela() {
 		janela = new JFrame();
-		janela.setBounds(0, 0, 185, 220);
+		janela.setBounds(0, 0, 220, 220);
 		janela.setLocationRelativeTo(null); //alinha a janela no centro da tela
 		janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		janela.setIconImage(img_I.getImage()); //define o icone
@@ -221,9 +229,9 @@ public class Menu {
 		
 	}
 	
-	//abre o arquivo para ler a resolução anterior
+	//abre o arquivo para ler a resoluï¿½ï¿½o anterior
 	private void getResolution(JComboBox resol) {
-		//criação do buffer para abrir arquivo txt contendo informações
+		//criaï¿½ï¿½o do buffer para abrir arquivo txt contendo informaï¿½ï¿½es
 		try {
 			String linha;
 			
@@ -260,7 +268,7 @@ public class Menu {
 	    }
 	}
 	
-	//metodo usado para mudar a resolução no arquivo
+	//metodo usado para mudar a resoluï¿½ï¿½o no arquivo
 	private void setResolution(String resol) {
 		dados[0] = new String(resol);
 		
@@ -270,7 +278,7 @@ public class Menu {
 		
 		File arq = new File("data", "configs.txt");
 		
-		//caso o arquivo não exista ele irá criar
+		//caso o arquivo nï¿½o exista ele irï¿½ criar
 		if(!arq.exists()) {
 			try {
 				arq.createNewFile();
