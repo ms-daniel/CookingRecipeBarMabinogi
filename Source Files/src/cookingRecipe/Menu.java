@@ -69,7 +69,7 @@ public class Menu {
 		texto.setFont(new Font("Arial", Font.BOLD, 13));
 		
 		JLabel version = new JLabel();
-		version.setText("v0.3.2");
+		version.setText("v0.3.3");
 		version.setBounds(90, 135, 90, 15);
 		version.setFont(new Font("Arial", 0, 10));
 		

@@ -71,60 +71,61 @@ public class Operations {
 		
 		try {
 			img = new ImageIcon(getClass().getClassLoader().getResource(resolution + "/" + recipe + ".png"));
+			
+			close = new JButton("X");
+			close.setBounds(300, 0, 15, 15);
+			close.setMargin(margem);
+			close.setCursor(new Cursor(Cursor.HAND_CURSOR));
+			close.setFont(new Font("Arial", Font.BOLD, 13));
+			close.setBackground(Color.red);
+			close.setForeground(Color.white);
+			close.setFocusable(false);
+			close.setEnabled(true);
+			
+			bar_img = new JLabel();
+			bar_img.setIcon(img);
+			bar_img.setBounds(0, -9, 300, 40);
+			
+			jan.getContentPane().add(bar_img);
+			jan.getContentPane().add(close);
+			
+			close.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent arg0) {
+					jan.setVisible(false);
+				}
+			});
+			
+			//esses eventos sï¿½o de quando o usuario puxa a janela pop-up.
+			//assim que esse evento acontece o programa vai capturando a posiï¿½ï¿½o do mouse
+			//para mover a janela junto
+			jan.addMouseListener(new MouseAdapter() {
+			      public void mousePressed(MouseEvent e) {
+			        point.x = e.getX();
+			        point.y = e.getY();
+			      }
+			    });
+			 jan.addMouseMotionListener(new MouseMotionAdapter() {
+			      public void mouseDragged(MouseEvent e) {
+			        Point p = jan.getLocation();
+			        
+			        cord_x = p.x + e.getX() - point.x;
+			        cord_y = p.y + e.getY() - point.y;
+			        
+			        //salva coordenadas nos vetores para poder salvar a configuraÃ§Ã£o para uso posterior
+			        dados[1] = String.valueOf(cord_x);
+			        dados[2] = String.valueOf(cord_y);
+			        
+			        jan.setLocation(cord_x, cord_y);
+			        setXandY();
+			      }
+			    });
+			 
+			 jan.setVisible(true);
+			
+			
 		}catch(NullPointerException e) {
 			JOptionPane.showMessageDialog(jan, "This recipe doesn't exist yet.");
-			jan.setVisible(false);
 		}
-		
-		close = new JButton("X");
-		close.setBounds(300, 0, 15, 15);
-		close.setMargin(margem);
-		close.setCursor(new Cursor(Cursor.HAND_CURSOR));
-		close.setFont(new Font("Arial", Font.BOLD, 13));
-		close.setBackground(Color.red);
-		close.setForeground(Color.white);
-		close.setFocusable(false);
-		close.setEnabled(true);
-		
-		bar_img = new JLabel();
-		bar_img.setIcon(img);
-		bar_img.setBounds(0, -9, 300, 40);
-		
-		jan.getContentPane().add(bar_img);
-		jan.getContentPane().add(close);
-		
-		close.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				jan.setVisible(false);
-			}
-		});
-		
-		//esses eventos são de quando o usuario puxa a janela pop-up.
-		//assim que esse evento acontece o programa vai capturando a posição do mouse
-		//para mover a janela junto
-		jan.addMouseListener(new MouseAdapter() {
-		      public void mousePressed(MouseEvent e) {
-		        point.x = e.getX();
-		        point.y = e.getY();
-		      }
-		    });
-		 jan.addMouseMotionListener(new MouseMotionAdapter() {
-		      public void mouseDragged(MouseEvent e) {
-		        Point p = jan.getLocation();
-		        
-		        cord_x = p.x + e.getX() - point.x;
-		        cord_y = p.y + e.getY() - point.y;
-		        
-		        dados[1] = String.valueOf(cord_x);
-		        dados[2] = String.valueOf(cord_y);
-		        
-		        jan.setLocation(cord_x, cord_y);
-		        setXandY();
-		      }
-		    });
-		 
-		 jan.setVisible(true);
-		
 	}
 	
 	private void CountQt() {
@@ -154,7 +155,7 @@ public class Operations {
 
 		File arq = new File("data", "configs.txt");
 		
-		//caso o arquivo não exista ele irá criar
+		//caso o arquivo nï¿½o exista ele irï¿½ criar
 		if(!arq.exists()) {
 			try {
 				arq.createNewFile();
