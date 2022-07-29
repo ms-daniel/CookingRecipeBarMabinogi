@@ -1,3 +1,4 @@
+package cookingRecipe;
 
 import java.awt.Color;
 
@@ -24,6 +25,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 public class Menu {
+	private recipeList RL = new recipeList();
 	private BufferedReader br = null;
 	private String[] dados;
 	private Operations op = new Operations(); //cria instancia da classe que ira trabalhar com a barra em popup
@@ -38,7 +40,7 @@ public class Menu {
 	
 	private Object[] type = {"Mixing", "Baking", "Simmering", "Kneading", "Boiling", "Noodle Making", "Deep-frying", "Stir-frying"};
 	
-	private Object[] mixing = {"Tomato Basil Salad", "Lemonade"};
+	//private Object[] mixing = receitas.getMixing();
 	private Object[] simmering = {"Steamed Potato"};
 	private Object[] baking = {""};
 	private Object[] kneading = {"Flour Dough", "Fry Batter"};
@@ -69,7 +71,7 @@ public class Menu {
 		rec.setBounds(10, 25, 150, 30);
 		rec.setFont(new Font("Arial", Font.BOLD, 13));
 		
-		recipes = new JComboBox(mixing);
+		recipes = new JComboBox(RL.mixing);
 		recipes.setBounds(10, 65, 150, 30);
 		recipes.setFont(new Font("Arial", Font.BOLD, 13));
 		
@@ -170,8 +172,8 @@ public class Menu {
 		recipes.removeAllItems();
 		//{"Mixing", "Baking", "Simmering", "Kneading", "Boiling", "Noodle Making", "Deep-frying", "Stir-frying"};
 		if(rec.getSelectedItem().toString().equals("Mixing")) {
-			for(int i = 0; i < mixing.length; i++) {
-				recipes.addItem(mixing[i]);
+			for(int i = 0; i < RL.mixing.length; i++) {
+				recipes.addItem(RL.mixing[i]);
 			}
 		}
 		
