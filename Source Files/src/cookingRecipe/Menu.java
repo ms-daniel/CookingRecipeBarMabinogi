@@ -17,6 +17,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -70,7 +71,7 @@ public class Menu {
 		
 		JLabel version = new JLabel();
 		version.setText("v0.3.3");
-		version.setBounds(90, 135, 90, 15);
+		version.setBounds(90, 135, 31, 15);
 		version.setFont(new Font("Arial", 0, 10));
 		
 		

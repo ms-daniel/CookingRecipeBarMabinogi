@@ -18,6 +18,7 @@ import java.io.PrintWriter;
 import java.net.URI;
 import java.net.URISyntaxException;
 
+import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -42,7 +43,7 @@ public class Operations {
 	private JButton close;
 	
 	private int n1, n2, n3;
-	private int qt;
+	private int qt = 3;
 	
 	private ImageIcon img;
 	
@@ -56,16 +57,14 @@ public class Operations {
 		this.dados = dados;
 		this.cord_x = Integer.parseInt(dados[1]);
 		this.cord_y = Integer.parseInt(dados[2]);
-		
-		CountQt();
 		Bar();
 	}
 	
 	private void Bar() {
 		JFrame jan = new JFrame();
 		jan.setUndecorated(true);
-		jan.setBounds(cord_x, cord_y, 360, 27);
-		jan.setBackground(new Color(1.0f,1.0f,1.0f,0.1f));
+		jan.setBounds(cord_x, cord_y, 330, 27);
+		jan.setBackground(new Color(1.0f,1.0f,1.0f,0.05f));
 		jan.setLayout(null);
 		jan.setAlwaysOnTop(true);
 		
@@ -73,7 +72,7 @@ public class Operations {
 			img = new ImageIcon(getClass().getClassLoader().getResource(resolution + "/" + recipe + ".png"));
 			
 			close = new JButton("X");
-			close.setBounds(300, 0, 15, 15);
+			close.setBounds(310, 4, 15, 15);
 			close.setMargin(margem);
 			close.setCursor(new Cursor(Cursor.HAND_CURSOR));
 			close.setFont(new Font("Arial", Font.BOLD, 13));
@@ -84,10 +83,16 @@ public class Operations {
 			
 			bar_img = new JLabel();
 			bar_img.setIcon(img);
-			bar_img.setBounds(0, -9, 300, 40);
+			bar_img.setBounds(4, -9, 300, 40);
+			
+			//JLabel para definir bordas no frame
+			JLabel border = new JLabel();
+			border.setBounds(0, 0, 330, 27);
+			border.setBorder(BorderFactory.createLineBorder(Color.black));
 			
 			jan.getContentPane().add(bar_img);
 			jan.getContentPane().add(close);
+			jan.getContentPane().add(border);
 			
 			close.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent arg0) {
@@ -103,9 +108,13 @@ public class Operations {
 			        point.x = e.getX();
 			        point.y = e.getY();
 			      }
+			      public void mouseReleased(MouseEvent e) {
+			    	  jan.setCursor(Cursor.DEFAULT_CURSOR);
+				  }
 			    });
 			 jan.addMouseMotionListener(new MouseMotionAdapter() {
 			      public void mouseDragged(MouseEvent e) {
+			    	jan.setCursor(Cursor.MOVE_CURSOR);
 			        Point p = jan.getLocation();
 			        
 			        cord_x = p.x + e.getX() - point.x;
@@ -118,6 +127,7 @@ public class Operations {
 			        jan.setLocation(cord_x, cord_y);
 			        setXandY();
 			      }
+			      
 			    });
 			 
 			 jan.setVisible(true);
@@ -126,14 +136,6 @@ public class Operations {
 		}catch(NullPointerException e) {
 			JOptionPane.showMessageDialog(jan, "This recipe doesn't exist yet.");
 		}
-	}
-	
-	private void CountQt() {
-		if(recipe.equals("Steamed Potato")) {
-			qt = 3;
-		}
-		else
-			qt = 3;
 	}
 	
 	private void Change() {
