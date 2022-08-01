@@ -50,7 +50,6 @@ public class Menu {
 	
 	private Object[] type = {"Mixing", "Baking", "Simmering", "Kneading", "Boiling", "Noodle Making", "Deep-frying", "Stir-frying"};
 
-	private Object[] simmering = {"Steamed Potato"};
 	private Object[] kneading = {"Flour Dough", "Fry Batter"};
 	private Object[] boiling = {"Basil Tea","Cheese Fondue", "Starch Syrup"};
 	private Object[] noodle = {"Noodle"};
@@ -244,8 +243,8 @@ public class Menu {
 		}
 		
 		else if(rec.getSelectedItem().toString().equals("Simmering")) {
-			for(int i = 0; i < simmering.length; i++) {
-				recipes.addItem(simmering[i]);
+			for(int i = 0; i < RL.simmering.length; i++) {
+				recipes.addItem(RL.simmering[i]);
 			}
 		}
 		
