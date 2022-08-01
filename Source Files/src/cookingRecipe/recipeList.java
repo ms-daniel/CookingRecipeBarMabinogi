@@ -1,6 +1,7 @@
 package cookingRecipe;
 
 public class recipeList {
+	
 	public Object[] mixing = {
 			"Afternoon Tea Set",
 			"Apple Juice",
@@ -201,6 +202,7 @@ public class recipeList {
 			"Triple Hotcakes",
 			"Truffle Omelet"
 	};
+	
 	public Object[] kneading = {
 			"Cornbread Dough",
 			"Flour Dough",
@@ -208,15 +210,37 @@ public class recipeList {
 			"Shrimp Taming Bait",
 			"Taitinn Carp Taming Bait"
 	};
+	
 	public Object[] boiling = {
 			
 	};
+	
 	public Object[] noodle = {
-			
+			"Assorted Sashimi Noodles",
+			"Beltfish Sashimi Noodles",
+			"Chicken Chow Mein",
+			"Curry Udon",
+			"Festive Noodles",
+			"Miso Ramen",
+			"Noodle",
+			"Pad Thai",
+			"Peeled Bean Noodles",
+			"Roasted Bean Noodles",
+			"Seafood Yakisoba",
+			"Shio Ramen",
+			"Shoyu Ramen",
+			"Shrimp Tempura Udon",
+			"Somen Noodles",
+			"Tofu Noodles A",
+			"Tofu Noodles B",
+			"Tofu Noodles C",
+			"Water-soaked Bean Noodles"
 	};
+	
 	public Object[] deep_frying = {
 			
 	};
+	
 	public Object[] stir_frying = {
 			
 	};

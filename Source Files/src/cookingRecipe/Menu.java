@@ -14,7 +14,6 @@ import java.awt.event.MouseEvent;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -22,16 +21,17 @@ import java.io.PrintWriter;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-import javax.swing.plaf.basic.BasicComboBoxRenderer;
 
+
+@SuppressWarnings({"rawtypes" , "unchecked"})
 public class Menu {
+	
 	//instancia para recebr as Strings com os nomes das receitas
 	private recipeList RL = new recipeList();
 	
@@ -45,15 +45,12 @@ public class Menu {
 	private Object[] resolution = {"1920x1080", "1280x720"};
 	
 	private String recipeS;
+	
 	private JComboBox recipes;
 	private JComboBox rec;
 	
 	private Object[] type = {"Mixing", "Baking", "Simmering", "Kneading", "Boiling", "Noodle Making", "Deep-frying", "Stir-frying"};
 
-	private Object[] boiling = {"Basil Tea","Cheese Fondue", "Starch Syrup"};
-	private Object[] noodle = {"Noodle"};
-	private Object[] deep_frying = {"Glazed Sweet Potatoes"};
-	private Object[] stir_frying = {""};
 	
 	//============================================================
 	
@@ -65,6 +62,7 @@ public class Menu {
 	
 	private ImageIcon git  = new ImageIcon(getClass().getClassLoader().getResource("git-icon.gif"));
 	
+
 	public void GetMenu() {
 		
 		
@@ -254,26 +252,26 @@ public class Menu {
 		}
 		
 		else if(rec.getSelectedItem().toString().equals("Boiling")) {
-			for(int i = 0; i < boiling.length; i++) {
-				recipes.addItem(boiling[i]);
+			for(int i = 0; i < RL.boiling.length; i++) {
+				recipes.addItem(RL.boiling[i]);
 			}
 		}
 		
 		else if(rec.getSelectedItem().toString().equals("Noodle Making")) {
-			for(int i = 0; i < noodle.length; i++) {
-				recipes.addItem(noodle[i]);
+			for(int i = 0; i < RL.noodle.length; i++) {
+				recipes.addItem(RL.noodle[i]);
 			}
 		}
 		
 		else if(rec.getSelectedItem().toString().equals("Deep-frying")) {
-			for(int i = 0; i < deep_frying.length; i++) {
-				recipes.addItem(deep_frying[i]);
+			for(int i = 0; i < RL.deep_frying.length; i++) {
+				recipes.addItem(RL.deep_frying[i]);
 			}
 		}
 		
 		else if(rec.getSelectedItem().toString().equals("Stir-frying")) {
-			for(int i = 0; i < stir_frying.length; i++) {
-				recipes.addItem(stir_frying[i]);
+			for(int i = 0; i < RL.stir_frying.length; i++) {
+				recipes.addItem(RL.stir_frying[i]);
 			}
 		}
 		

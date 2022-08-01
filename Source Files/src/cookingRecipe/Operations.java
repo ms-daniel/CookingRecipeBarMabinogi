@@ -4,7 +4,7 @@ import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Font;
 import java.awt.Insets;
-import java.awt.MouseInfo;
+
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -15,8 +15,6 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.net.URI;
-import java.net.URISyntaxException;
 
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
@@ -37,8 +35,6 @@ public class Operations {
 	
 	//classe usada para mover a janela com o mouse e ela ir se auto ajustando
 	private Point point = new Point();
-	
-	private boolean mouseEstado = false;
 	
 	private JButton close;
 	
@@ -108,7 +104,7 @@ public class Operations {
 			        point.x = e.getX();
 			        point.y = e.getY();
 			      }
-			      public void mouseReleased(MouseEvent e) {
+				public void mouseReleased(MouseEvent e) {
 			    	  jan.setCursor(Cursor.DEFAULT_CURSOR);
 				  }
 			    });
@@ -138,7 +134,7 @@ public class Operations {
 		}
 	}
 	
-	private void Change() {
+	/*private void Change() {
 		JFrame jan = new JFrame();
 		if(!mouseEstado)
 			jan.setUndecorated(false);
@@ -149,7 +145,7 @@ public class Operations {
 		//jan.setBackground(new Color(1.0f,1.0f,1.0f,0.1f));
 		jan.setVisible(true);
 		jan.setLayout(null);
-	}
+	}*/
 	
 	//usado para mudar o X e Y dentro do arquivo configs (segundo e terceiro elementos)
 	private void setXandY() {
