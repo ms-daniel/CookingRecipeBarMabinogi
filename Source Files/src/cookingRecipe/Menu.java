@@ -50,7 +50,6 @@ public class Menu {
 	
 	private Object[] type = {"Mixing", "Baking", "Simmering", "Kneading", "Boiling", "Noodle Making", "Deep-frying", "Stir-frying"};
 
-	private Object[] kneading = {"Flour Dough", "Fry Batter"};
 	private Object[] boiling = {"Basil Tea","Cheese Fondue", "Starch Syrup"};
 	private Object[] noodle = {"Noodle"};
 	private Object[] deep_frying = {"Glazed Sweet Potatoes"};
@@ -102,7 +101,7 @@ public class Menu {
 		ok.setMargin(margem);
 		ok.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		ok.setFont(new Font("Arial", Font.BOLD, 13));
-		ok.setBackground(Color.DARK_GRAY);
+		ok.setBackground(new Color(0, 128, 0));
 		ok.setForeground(Color.white);
 		ok.setFocusable(false);
 		ok.setEnabled(true);
@@ -143,7 +142,7 @@ public class Menu {
 		gitB.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		gitB.setFocusable(false);
 		gitB.setToolTipText("Github creator");
-		gitB.setBounds(50, 135, 50, 50);
+		gitB.setBounds(50, 136, 50, 50);
 		
 		getResolution(ComboResolution); //verificar se h� resolu��o salva anteriormente
 		
@@ -249,8 +248,8 @@ public class Menu {
 		}
 		
 		else if(rec.getSelectedItem().toString().equals("Kneading")) {
-			for(int i = 0; i < kneading.length; i++) {
-				recipes.addItem(kneading[i]);
+			for(int i = 0; i < RL.kneading.length; i++) {
+				recipes.addItem(RL.kneading[i]);
 			}
 		}
 		

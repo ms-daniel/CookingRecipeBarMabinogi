@@ -201,10 +201,24 @@ public class recipeList {
 			"Triple Hotcakes",
 			"Truffle Omelet"
 	};
-	public Object[] kneading = {"Flour Dough", "Fry Batter"};
-	public Object[] boiling = {"Basil Tea","Cheese Fondue", "Starch Syrup"};
-	public Object[] noodle = {"Noodle"};
-	public Object[] deep_frying = {"Glazed Sweet Potatoes"};
-	public Object[] stir_frying = {""};
+	public Object[] kneading = {
+			"Cornbread Dough",
+			"Flour Dough",
+			"Fry Batter",
+			"Shrimp Taming Bait",
+			"Taitinn Carp Taming Bait"
+	};
+	public Object[] boiling = {
+			
+	};
+	public Object[] noodle = {
+			
+	};
+	public Object[] deep_frying = {
+			
+	};
+	public Object[] stir_frying = {
+			
+	};
 	
 }
