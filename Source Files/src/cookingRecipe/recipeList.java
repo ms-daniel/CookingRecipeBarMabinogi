@@ -91,12 +91,108 @@ public class recipeList {
 			"Weekend Warrior Hotwings & Beer"
 	};
 	
-	private Object[] simmering = {"Steamed Potato"};
-	private Object[] baking = {""};
-	private Object[] kneading = {"Flour Dough", "Fry Batter"};
-	private Object[] boiling = {"Basil Tea","Cheese Fondue", "Starch Syrup"};
-	private Object[] noodle = {"Noodle"};
-	private Object[] deep_frying = {"Glazed Sweet Potatoes"};
-	private Object[] stir_frying = {""};
+	public Object[] simmering = {"Steamed Potato"};
+	
+	public Object[] baking = {
+			"Apple Souffle",
+			"Bacon Wrapped Tuna",
+			"Baked Potato",
+			"Barley Bread",
+			"Beef Steak",
+			"Black Tea Honey Scone",
+			"Broiled Brifne Carp",
+			"Brownie",
+			"Butter Biscuit",
+			"Butter Grilled Reef Lobster",
+			"Cabbage Pancake",
+			"Cannele",
+			"Cheese Bread",
+			"Cheese Gratin",
+			"Chocolate Cake",
+			"Chocolate Chip Cookie",
+			"Chocolate Souffle",
+			"Churrasco",
+			"Coconut Cookie",
+			"Coconut Pound Cake",
+			"Coq Au Vin",
+			"Corn Scone",
+			"Cornbread",
+			"Crazy Chocolate Ball",
+			"Crepe",
+			"Croffle",
+			"Croque Monsieur",
+			"Curry Bread",
+			"Curry-Roasted Black Sea Bream",
+			"Curry-Roasted Red Sea Bream",
+			"Dragon T-Bone Steak",
+			"Egg & Mayo Toast",
+			"Flying Fish Crepe",
+			"Fortune Cookie",
+			"Fried Dumplings",
+			"Fried Egg",
+			"Garlic Bread",
+			"Gateau Au Chocolat",
+			"Giant Star Candy",
+			"Gochujang Pork Bulgogi",
+			"Grilled Black Dragon Heart",
+			"Grilled Catfish",
+			"Grilled Corn",
+			"Grilled Eel",
+			"Grilled Pineapple",
+			"Grilled Salted Herring",
+			"Grilled Shellfish",
+			"Grilled Silk-Striped Marlin",
+			"Grilled White Dragon Heart",
+			"Gyeran-mari",
+			"Halloween Hat Cookie",
+			"Halloween Owl Cookie",
+			"Halloween Star Cookie",
+			"Heartbeat Gateau Au Chocolat",
+			"Hotcakes",
+			"Jumbo Fried Dumplings",
+			"Kikiki Mushroom Cookie",
+			"Kraken Skewer",
+			"Large Fried Dumplings",
+			"Macaroon",
+			"Mackerel Steak",
+			"Milk Bread",
+			"Mint Chocolate Cookie",
+			"Mushroom Cookie",
+			"Mushroom Gratin",
+			"Omelet",
+			"Pineapple Bacon Skewer",
+			"Quiche",
+			"Rare Cheesecake",
+			"Roasted Bacon",
+			"Roasted Bean",
+			"Roasted Chicken",
+			"Roasted Chicken Wing",
+			"Roasted Coffee",
+			"Roasted Turkey",
+			"Salt Grilled Sweetfish",
+			"Sausage",
+			"Schweinshaxe",
+			"Show-off Steak",
+			"Sliced Bread",
+			"Smoked Sunfish",
+			"S'more",
+			"Strawberry Jam & Toast",
+			"Striped Marlin Steak",
+			"Sturgeon Steak",
+			"Taitinn Carp Brochette",
+			"Takoyaki",
+			"T-Bone Steak",
+			"Toast",
+			"Toasted Rice Cake",
+			"Tofu Steak",
+			"Tortilla",
+			"Triple Hotcakes",
+			"Truffle Omelet"
+	};
+	public Object[] kneading = {"Flour Dough", "Fry Batter"};
+	public Object[] boiling = {"Basil Tea","Cheese Fondue", "Starch Syrup"};
+	public Object[] noodle = {"Noodle"};
+	public Object[] deep_frying = {"Glazed Sweet Potatoes"};
+	public Object[] stir_frying = {""};
 	
 }
