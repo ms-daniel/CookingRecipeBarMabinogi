@@ -91,7 +91,19 @@ public class recipeList {
 			"Weekend Warrior Hotwings & Beer"
 	};
 	
-	public Object[] simmering = {"Steamed Potato"};
+	public Object[] simmering = {
+			"Bean Stuffing",
+			"Chicken Soup",
+			"Hard-Boiled Egg",
+			"Simmered Beans",
+			"Simmered Cabbage",
+			"Simmered Chestnuts",
+			"Simmered Octopus",
+			"Simmered Sweet Potato",
+			"Steamed Corn",
+			"Steamed Potato",
+			"Sweet Pumpkin Puree"
+	};
 	
 	public Object[] baking = {
 			"Apple Souffle",

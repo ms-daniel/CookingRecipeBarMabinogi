@@ -80,22 +80,24 @@ public class Menu {
 		version.setBounds(116, 170, 31, 15);
 		version.setFont(new Font("Arial", 0, 10));
 		
-		
+		//caixa de selecao para os tipos de receita
 		rec = new JComboBox(type);
 		rec.setBounds(10, 25, 185, 30);
 		rec.setFont(new Font("Arial", Font.BOLD, 13));
 		
+		//caixa de selecao para as receitas
 		recipes = new JComboBox(RL.mixing);
 		recipes.setBounds(10, 65, 185, 30);
-		
 		recipes.setFont(new Font("Arial", Font.BOLD, 13));
 		
+		//acao quando muda o valor do tipo de receita
 		rec.addActionListener (new ActionListener () { //quando mudar o combobox
 		    public void actionPerformed(ActionEvent e) {
 		    	ChangeBox();
 		    }
 		});
 		
+		//botao de select
 		JButton ok = new JButton("SELECT");
 		ok.setBounds(10, 190, 90, 25);
 		ok.setMargin(margem);
@@ -106,6 +108,7 @@ public class Menu {
 		ok.setFocusable(false);
 		ok.setEnabled(true);
 		
+		//botao cancelar
 		JButton cancel = new JButton("CANCEL");
 		cancel.setBounds(105, 190, 90, 25);
 		cancel.setMargin(margem);
@@ -116,20 +119,24 @@ public class Menu {
 		cancel.setFocusable(false);
 		cancel.setEnabled(true);
 		
+		
 		JLabel Lresolution = new JLabel();
 		Lresolution.setText("Screen Game Resolution");
 		Lresolution.setBounds(35, 90, 200, 30);
 		Lresolution.setFont(new Font("Arial", Font.BOLD, 12));
 		
+		//caixa de selecao de resolucao
 		JComboBox ComboResolution = new JComboBox(resolution);
 		ComboResolution.setBounds(10, 115, 185, 20);
 		ComboResolution.setFont(new Font("Arial", Font.BOLD, 12));
 		
+		//label para botao github
 		JLabel gitC = new JLabel();
 		gitC.setText("<html><center>Github<br>Creator</center></html>");
 		gitC.setBounds(108, 132, 50, 50);
 		gitC.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		
+		//botao github
 		JButton gitB = new JButton();
 		gitB.setIcon(git);
 		gitB.setContentAreaFilled(false);
