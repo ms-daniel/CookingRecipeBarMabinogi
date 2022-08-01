@@ -3,11 +3,14 @@ package cookingRecipe;
 import java.awt.Color;
 
 import java.awt.Cursor;
+import java.awt.Desktop;
 import java.awt.Font;
 import java.awt.Insets;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -16,6 +19,8 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
@@ -60,6 +65,8 @@ public class Menu {
 	private ImageIcon img_I = new ImageIcon(
 			getClass().getClassLoader().getResource("cooking.png"));
 	
+	private ImageIcon git  = new ImageIcon(getClass().getClassLoader().getResource("git-icon.gif"));
+	
 	public void GetMenu() {
 		
 		
@@ -70,7 +77,7 @@ public class Menu {
 		
 		JLabel version = new JLabel();
 		version.setText("v0.3.3");
-		version.setBounds(90, 135, 31, 15);
+		version.setBounds(116, 170, 31, 15);
 		version.setFont(new Font("Arial", 0, 10));
 		
 		
@@ -90,7 +97,7 @@ public class Menu {
 		});
 		
 		JButton ok = new JButton("SELECT");
-		ok.setBounds(10, 150, 90, 25);
+		ok.setBounds(10, 190, 90, 25);
 		ok.setMargin(margem);
 		ok.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		ok.setFont(new Font("Arial", Font.BOLD, 13));
@@ -100,7 +107,7 @@ public class Menu {
 		ok.setEnabled(true);
 		
 		JButton cancel = new JButton("CANCEL");
-		cancel.setBounds(105, 150, 90, 25);
+		cancel.setBounds(105, 190, 90, 25);
 		cancel.setMargin(margem);
 		cancel.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		cancel.setFont(new Font("Arial", Font.BOLD, 13));
@@ -118,6 +125,20 @@ public class Menu {
 		ComboResolution.setBounds(10, 115, 185, 20);
 		ComboResolution.setFont(new Font("Arial", Font.BOLD, 12));
 		
+		JLabel gitC = new JLabel();
+		gitC.setText("<html><center>Github<br>Creator</center></html>");
+		gitC.setBounds(108, 132, 50, 50);
+		gitC.setCursor(new Cursor(Cursor.HAND_CURSOR));
+		
+		JButton gitB = new JButton();
+		gitB.setIcon(git);
+		gitB.setContentAreaFilled(false);
+		gitB.setBorderPainted(false);
+		gitB.setCursor(new Cursor(Cursor.HAND_CURSOR));
+		gitB.setFocusable(false);
+		gitB.setToolTipText("Github creator");
+		gitB.setBounds(50, 135, 50, 50);
+		
 		getResolution(ComboResolution); //verificar se h� resolu��o salva anteriormente
 		
 		
@@ -129,6 +150,8 @@ public class Menu {
 		janela.getContentPane().add(ComboResolution);
 		janela.getContentPane().add(Lresolution);
 		janela.getContentPane().add(version);
+		janela.getContentPane().add(gitB);
+		janela.getContentPane().add(gitC);
 		
 		//aciona uma acao quando troca o item do combobox de resolu��o de tela
 		ComboResolution.addActionListener(new ActionListener() {
@@ -161,13 +184,35 @@ public class Menu {
 				System.exit(0);
 			}
 		});
+		
+		gitB.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				try {
+					Desktop.getDesktop().browse(new URI("https://github.com/ms-daniel"));
+				} catch (IOException | URISyntaxException e1) {
+			            e1.printStackTrace();
+			    }
+			}
+		});
+		
+		gitC.addMouseListener(new MouseAdapter() {
+		    @Override
+		    public void mousePressed(MouseEvent e) {
+		    	try {
+					Desktop.getDesktop().browse(new URI("https://github.com/ms-daniel"));
+				} catch (IOException | URISyntaxException e1) {
+			            e1.printStackTrace();
+			    }
+		    }
+
+		});
 	
 	}
 	
 	
 	public JFrame Criarjanela() {
 		janela = new JFrame();
-		janela.setBounds(0, 0, 220, 220);
+		janela.setBounds(0, 0, 220, 260);
 		janela.setLocationRelativeTo(null); //alinha a janela no centro da tela
 		janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		janela.setIconImage(img_I.getImage()); //define o icone
