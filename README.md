@@ -34,7 +34,7 @@ When you open it y'll have the interface of image 1.
 #### Options:
 1. Is the bar you must choose the type of recipe.
 2. Is when you choose the recipe.
-3. This part is not complete, here you will select the game's resolution in the future.
+3. Here you will select the game's resolution in the future.
 4. **Select Button** - When you select your recipe, just click on the *select button* that will open a pop-up bar for you to center on the game bar(see the image 2). 
 5. **Cancel Button** - Just close the program.
 
@@ -44,10 +44,5 @@ When you open it y'll have the interface of image 1.
 
 - This program DOESN'T contain all the game's recipes because it's very boring to create the images, but for that I created another program that automatically generates the images from the percentages and attach to it.
 - My English is terrible, but I hope the text is easy to understand.
-
-The other program:
-**COMING SOON**
-
-<img src="https://github.com/ms-daniel/justimagens/raw/main/DrawnMabinogi.jpg" >
 
 ![Finaly](https://c.tenor.com/aQgDfDwIOIoAAAAi/line.gif)
