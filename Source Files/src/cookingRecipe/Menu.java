@@ -49,7 +49,24 @@ public class Menu {
 	private JComboBox recipes;
 	private JComboBox rec;
 	
-	private Object[] type = {"Mixing", "Baking", "Simmering", "Kneading", "Boiling", "Noodle Making", "Deep-frying", "Stir-frying"};
+	private Object[] type = {
+			"Baking",
+			"Boiling",
+			"Deep-frying",
+			"Fermenting",
+			"Jam Making",
+			"Julienning",
+			"Kneading",
+			"Mixing",
+			"Noodle Making",
+			"Pasta Making",
+			"Pie Making",
+			"Pizza Making",
+			"Simmering",
+			"Sous Vide",
+			"Steaming",
+			"Stir-frying"
+	};
 
 	
 	//============================================================
@@ -82,7 +99,7 @@ public class Menu {
 		rec.setFont(new Font("Arial", Font.BOLD, 13));
 		
 		//caixa de selecao para as receitas
-		recipes = new JComboBox(RL.mixing);
+		recipes = new JComboBox(RL.baking);
 		recipes.setBounds(10, 65, 185, 30);
 		recipes.setFont(new Font("Arial", Font.BOLD, 13));
 		
@@ -272,6 +289,53 @@ public class Menu {
 		else if(rec.getSelectedItem().toString().equals("Stir-frying")) {
 			for(int i = 0; i < RL.stir_frying.length; i++) {
 				recipes.addItem(RL.stir_frying[i]);
+			}
+		}
+		else if(rec.getSelectedItem().toString().equals("Pie Making")) {
+			for(int i = 0; i < RL.pie_making.length; i++) {
+				recipes.addItem(RL.pie_making[i]);
+			}
+		}
+		
+		else if(rec.getSelectedItem().toString().equals("Pizza Making")) {
+			for(int i = 0; i < RL.pizza_making.length; i++) {
+				recipes.addItem(RL.pizza_making[i]);
+			}
+		}
+		
+		else if(rec.getSelectedItem().toString().equals("Sous Vide")) {
+			for(int i = 0; i < RL.sous_vide.length; i++) {
+				recipes.addItem(RL.sous_vide[i]);
+			}
+		}
+		
+		else if(rec.getSelectedItem().toString().equals("Fermenting")) {
+			for(int i = 0; i < RL.fermenting.length; i++) {
+				recipes.addItem(RL.fermenting[i]);
+			}
+		}
+		
+		else if(rec.getSelectedItem().toString().equals("Jam Making")) {
+			for(int i = 0; i < RL.jam_making.length; i++) {
+				recipes.addItem(RL.jam_making[i]);
+			}
+		}
+		
+		else if(rec.getSelectedItem().toString().equals("Julienning")) {
+			for(int i = 0; i < RL.julienning.length; i++) {
+				recipes.addItem(RL.julienning[i]);
+			}
+		}
+		
+		else if(rec.getSelectedItem().toString().equals("Pasta Making")) {
+			for(int i = 0; i < RL.pasta_making.length; i++) {
+				recipes.addItem(RL.pasta_making[i]);
+			}
+		}
+		
+		else if(rec.getSelectedItem().toString().equals("Steaming")) {
+			for(int i = 0; i < RL.steaming.length; i++) {
+				recipes.addItem(RL.steaming[i]);
 			}
 		}
 		

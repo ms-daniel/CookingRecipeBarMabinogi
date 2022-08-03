@@ -388,4 +388,32 @@ public class recipeList {
 			"Truffle Cream Gnocchi"
 	};
 	
+	public Object[] fermenting = {
+		
+	};
+	public Object[] jam_making = {
+		
+	};
+	public Object[] julienning = {
+		
+	};
+	
+	public Object[] pasta_making = {
+		
+	};
+	public Object[] pie_making = {
+		
+	};
+	public Object[] pizza_making = {
+		
+	};
+	
+	public Object[] sous_vide = {
+		
+	};
+	public Object[] steaming = {
+		
+	};
+
+	
 }
