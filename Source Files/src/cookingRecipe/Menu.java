@@ -38,7 +38,7 @@ public class Menu {
 	private BufferedReader br = null;
 	private String[] dados;
 	
-	private Operations op = new Operations(); //cria instancia da classe que ira trabalhar com a barra em popup
+	private Operations op; //cria instancia da classe que ira trabalhar com a barra em popup
 	
 	private JFrame janela;
 
@@ -89,9 +89,10 @@ public class Menu {
 		texto.setFont(new Font("Arial", Font.BOLD, 13));
 		
 		JLabel version = new JLabel();
-		version.setText("v0.3.3");
+		version.setText("v1.0.0");
 		version.setBounds(116, 170, 31, 15);
 		version.setFont(new Font("Arial", 0, 10));
+		version.setForeground(Color.BLUE);
 		
 		//caixa de selecao para os tipos de receita
 		rec = new JComboBox(type);
@@ -159,8 +160,8 @@ public class Menu {
 		gitB.setToolTipText("Github creator");
 		gitB.setBounds(50, 136, 50, 50);
 		
-		getResolution(ComboResolution); //verificar se h� resolu��o salva anteriormente
-		
+		getResolution(ComboResolution); //verificar se ha resolucao salva anteriormente
+		op = new Operations(dados); //cria a instancia da barra apos receber dados da resolucao e posicao
 		
 		janela.getContentPane().add(texto);
 		janela.getContentPane().add(rec);
@@ -190,7 +191,7 @@ public class Menu {
 				try {
 					//chama a cria��o da barra com os parametros nome da receita, resolu��o usada na receita e as coordenadas x e y da barra
 					// que est�o no arquivo configs 
-					op.runBar(recipeS, (String)ComboResolution.getSelectedItem(), dados);
+					op.runBar(recipeS, (String)ComboResolution.getSelectedItem(), (String)rec.getSelectedItem());
 
 				}catch(NumberFormatException E) {
 					JOptionPane.showMessageDialog(janela, "Invalid number format");
@@ -232,11 +233,13 @@ public class Menu {
 	
 	public JFrame Criarjanela() {
 		janela = new JFrame();
+		janela.setTitle("Cooking Bar");
 		janela.setBounds(0, 0, 220, 260);
 		janela.setLocationRelativeTo(null); //alinha a janela no centro da tela
 		janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		janela.setIconImage(img_I.getImage()); //define o icone
 		janela.getContentPane().setLayout(null);
+		janela.setResizable(false);
 		
 		return janela;
 	}
