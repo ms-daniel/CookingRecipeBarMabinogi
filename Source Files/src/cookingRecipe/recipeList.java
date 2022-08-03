@@ -123,6 +123,7 @@ public class recipeList {
 			"Bean Stuffing",
 			"Chicken Soup",
 			"Hard-Boiled Egg",
+			"Kraken Pulpo",
 			"Simmered Beans",
 			"Simmered Cabbage",
 			"Simmered Chestnuts",
