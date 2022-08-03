@@ -42,7 +42,7 @@ When you open it y'll have the interface of image 1.
 
 ## COMMENTS
 
-- This program DOESN'T contain all the game's recipes because it's very boring to create the images, but for that I created another program that automatically generates the images from the percentages and attach to it.
+- This program DOESN'T contain all the game's recipes because it's very boring copy infos.
 - My English is terrible, but I hope the text is easy to understand.
 
 ![Finaly](https://c.tenor.com/aQgDfDwIOIoAAAAi/line.gif)
