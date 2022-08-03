@@ -6,8 +6,8 @@ Festive Noodles,Somen Noodles,50,Meat Broth,40,Mixed Vegetables,10
 Miso Ramen,Noodle,30,Soybean Paste,20,Meat Broth,50
 Noodle,Wheat Flour,40,Egg,20,Water,40
 Pad Thai,Noodle,75,Mixed Vegetables,20,Soy Sauce,5
-Peeled Bean Noodles,Somen Noodles,75,Peeled Bean Broth,25,,
-Roasted Bean Noodles,Somen Noodles,75,Roasted Bean Broth,25,,
+Peeled Bean Noodles,Somen Noodles,75,Peeled Bean Broth,25,0,0
+Roasted Bean Noodles,Somen Noodles,75,Roasted Bean Broth,25,0,0
 Seafood Yakisoba,Noodle,80,Mixed Vegetables,15,Shellfish,5
 Shio Ramen,Noodle,30,Salt,20,Meat Broth,50
 Shoyu Ramen,Noodle,30,Soy Sauce,20,Meat Broth,50
@@ -16,4 +16,4 @@ Somen Noodles,Water,50,Wheat Flour,45,Salt,5
 Tofu Noodles A,Somen Noodles,43,Mashed Roasted Bean Flour Tofu,17,Meat Broth,40
 Tofu Noodles B,Somen Noodles,43,Mashed Peeled Bean Flour Tofu,17,Meat Broth,40
 Tofu Noodles C,Somen Noodles,43,Mashed Water-soaked Bean Flour Tofu,17,Meat Broth,40
-Water-soaked Bean Noodles,Somen Noodles,75,Water-soaked Bean Broth,25,,
+Water-soaked Bean Noodles,Somen Noodles,75,Water-soaked Bean Broth,25,0,0

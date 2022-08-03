@@ -4,18 +4,18 @@ Apple Juice,Apple,73,Berry,18,Sugar,9
 Assorted Fruits,Strawberry,45,Apple,31,Berry,24
 Assorted Sashimi,Salmon Sashimi,40,Eel Sashimi,30,Tuna Sashimi,30
 Assorted Sashimi Bibimbap,Assorted Sashimi,46,Steamed Rice,18,Mixed Vegetables,36
-Bacon and Potato Dog Food,Potato,60,Bacon,40,,
+Bacon and Potato Dog Food,Potato,60,Bacon,40,0,0
 Bacon Burger,Bread,50,Bacon,25,Cabbage,25
 Belvast Eel Rice Bowl,Steamed Rice,53,Belvast Eel,36,Mixed Vegetables,11
 Birthday Cake,Strawberry,5,Whipped Cream,20,Flour Dough,75
 Blueberry Whipped Cream Crepe,Crepe,45,Blueberry,30,Whipped Cream,25
 BnR,Leighean Gin,36,Brifne Whiskey,37,Ice,27
-Bread Crumb,Sliced Bread,100,,,,
+Bread Crumb,Sliced Bread,100,0,0,0,0
 Brifne Rocks,Ice,57,Brifne Whiskey,40,Lemon,3
 Cacao Chocolate Cake,Flour Dough,34,Cacao,33,Sugar,33
 Cafe Mocha,Espresso,40,Steamed Milk,40,Baking Chocolate,20
 Camellia Sling,Vales Whiskey,60,Camellia Seed,30,Water,10
-Candied Strawberries,Strawberry,90,Sugar,10,,
+Candied Strawberries,Strawberry,90,Sugar,10,0,0
 Cappuccino,Espresso,30,Milk,30,Steamed Milk,40
 Catfish Garden Salad,Catfish,60,Mixed Vegetables,25,Mayonnaise,15
 Caviar Canape,Sturgeon,40,Bread,55,Berry,5
@@ -30,32 +30,32 @@ Chojang,Vinegar,45,Gochujang,44,Garlic,11
 Club Sandwich,Sliced Bread,50,Tomato,20,Cabbage,30
 Coleslaw,Cabbage,70,Mayonnaise,12,Vinegar,18
 Cookies and Cream Cake,Chocolate Chip Cookie,5,Whipped Cream,20,Flour Dough,75
-Corn Dog,Sausage,45,Flour Dough,55,,
+Corn Dog,Sausage,45,Flour Dough,55,0,0
 Corned Abb Neagh Carp and Vegetables,Abb Neagh Carp,55,Mixed Vegetables,30,Salt,15
 Crepe Cake,Crepe,74,Whipped Cream,19,Fresh Honey,7
 Curry Paste,Curry Powder,70,Sliced Meat,15,Potato,15
 Decadence Platter,Chocolate Banana,10,Soft-Serve Ice Cream,20,Waffle Crisps,70
 Devil's Chocomix,Whipped Cream,35,Chocolate,30,Choco-Rox Cookie,35
-Dog Biscuit,Butter Biscuit,40,Chocolate Chip Cookie,60,,
+Dog Biscuit,Butter Biscuit,40,Chocolate Chip Cookie,60,0,0
 Dragon Flesh Lump,Dragon Flesh,34,Dragon Flesh,33,Dragon Flesh,33
-Dreamy Cotton Candy,Bluefin Tuna,80,Butter,20,,
+Dreamy Cotton Candy,Bluefin Tuna,80,Butter,20,0,0
 Ebi Sushi,Shrimp Sashimi,50,Steamed Rice,40,Vinegar,10
 Egg Caviar,Fried Egg,45,Sturgeon,30,Slice of Cheese,25
 Egg Salad,Hard-Boiled Egg,76,Mayonnaise,16,Salt,8
-Egg Sandwich,Fried Egg,15,Sliced Bread,85,,
+Egg Sandwich,Fried Egg,15,Sliced Bread,85,0,0
 Espresso Macchiato,Espresso,40,Steamed Milk,40,Water,20
 Filia Cookie Set,Mushroom Cookie,40,Coconut Cookie,40,Chocolate Chip Cookie,20
 Fruit Salad,Assorted Fruits,75,Mayonnaise,15,Sugar,10
-Full Kraken Meal,Spicy Kraken Stew,50,Kraken Stirfry,50,,
+Full Kraken Meal,Spicy Kraken Stew,50,Kraken Stirfry,50,0,0
 Gastro Burger,Large Meat,35,Block of Cheese,45,Brioche Bun,20
 Granita,Assorted Fruits,50,Sugar,13,Ice,37
 Halloween Wrapped Candy,Halloween Pumpkin Candy,30,Halloween Ghost Jelly,35,Halloween Pumpkin Jelly,35
 Halloween Wrapped Cookie,Halloween Hat Cookie,30,Halloween Star Cookie,35,Halloween Owl Cookie,35
 Happy Dessert Time Combo,Strawberry Whipped Cream Crepe,38,S'more,34,Gelatinous Custard Pudding,28
-Hard Cider,Apple,75,Brifne Whiskey,25,,
+Hard Cider,Apple,75,Brifne Whiskey,25,0,0
 Herb Mushroom Salad,Steamed Mushroom,70,Thyme,20,Olive Oil,10
-Highball,Lemon,25,Brifne Whiskey,75,,
-Holiday Cake,Cake in a Box,100,,,,
+Highball,Lemon,25,Brifne Whiskey,75,0,0
+Holiday Cake,Cake in a Box,100,0,0,0,0
 Iced Cafe Mocha,Cafe Mocha,60,Whipped Cream,20,Ice,20
 Iced Macchiato,Macchiato,50,Whipped Cream,30,Ice,20
 Imitation Japari Bun,Baking Chocolate,15,Slice of Cheese,15,Bread,70
@@ -79,21 +79,21 @@ Nares Cake Set,Coconut Pound Cake,50,Gateau Au Chocolat,30,Rare Cheesecake,20
 Onion Fried Tuna,Bluefin Tuna,60,Onion,30,Salt,10
 Orange Juice,Orange,72,Berry,18,Sugar,10
 Pan's Craft Brew,Barley Flour,5,Bottled Water,90,Malt,5
-Peeled Bean Broth,Peeled Bean Flour,75,Water,25,,
+Peeled Bean Broth,Peeled Bean Flour,75,Water,25,0,0
 Potato & Egg Salad,Steamed Potato,53,Hard-Boiled Egg,36,Mayonnaise,11
 Potato Salad,Steamed Potato,69,Onion,23,Pepper,8
 Rab's Food,Bacon,50,Steamed Rice,25,Sliced Meat,25
-Raw Chopped Kraken,Kraken Leg Meat,80,Garlic,20,,
+Raw Chopped Kraken,Kraken Leg Meat,80,Garlic,20,0,0
 Red Bean Shaved Ice,Mung Bean,15,Ice,60,Assorted Fruits,25
 Red Sunrise,Orange Juice,60,Brifne Whiskey,25,Sugar,15
 Reuben Sandwich,Sliced Bread,55,Salami,25,Sauerkraut,20
-Roasted Bean Broth,Roasted Bean Flour,75,Water,25,,
+Roasted Bean Broth,Roasted Bean Flour,75,Water,25,0,0
 Rose Basil Salad,Rose Petal,70,Basil,20,Olive Oil,10
 Rose Pepper Mushroom Stir Fry,Rose Petal,20,Pepper,10,Button Mushroom,70
 Salmon Salad,Salmon,80,Celery,15,Salt,5
 Salmon Sushi,Salmon Sashimi,52,Steamed Rice,38,Vinegar,10
 Screwdriver,Orange Juice,75,Brifne Whiskey,20,Lemon,5
-Seasoned Smelt,Fried Vegetables,60,Smelt,40,,
+Seasoned Smelt,Fried Vegetables,60,Smelt,40,0,0
 Shrimp Bruschetta,Shrimp,20,Bread,40,Mixed Vegetables,40
 Shrimp Burger,Bread,50,Shrimp,25,Cabbage,25
 Shrimp Dog Food,Steamed Rice,60,Shrimp,30,Salt,10
@@ -106,10 +106,10 @@ Tara Sausage Sandwich,Garlic Bread,35,Sausage,35,Cabbage,30
 Tomato Basil Salad,Tomato,50,Basil,30,Steamed Potato,20
 Toro Sushi,Tuna Sashimi,51,Steamed Rice,39,Vinegar,10
 Unagi Sushi,Eel Sashimi,59,Steamed Rice,31,Vinegar,10
-Vales Fire,Vales Whiskey,75,Ice,25,,
+Vales Fire,Vales Whiskey,75,Ice,25,0,0
 Vegetable Canape,Steamed Potato,40,Carrot,50,Lemon,10
 Water-soaked Bean,Bean,70,Water,25,Salt,5
-Water-soaked Bean Broth,Water-soaked Bean Flour,75,Water,25,,
+Water-soaked Bean Broth,Water-soaked Bean Flour,75,Water,25,0,0
 Weekend Warrior Hotwings & Beer,Fried Chicken,36,Spicy Fried Chicken,36,Highball,28
 Yggdrasil Leaf Shrimp Rice,Yggdrasil Leaf,10,Steamed Rice,60,Shrimp,30
 Yggdrasil Vegetable Soup,Yggdrasil Leaf,10,Cabbage,45,Onion,45
