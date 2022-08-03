@@ -278,11 +278,47 @@ public class recipeList {
 	};
 	
 	public Object[] deep_frying = {
-			
+			"Corn Chip",
+			"Fish and Chips",
+			"French Fries",
+			"Fried Abb Neagh Carp",
+			"Fried Capelin",
+			"Fried Chicken",
+			"Fried Chicken Wing",
+			"Fried Shrimp",
+			"Fried Smelt",
+			"Glazed Sweet Potatoes",
+			"Onion Ring",
+			"Pork Cutlet",
+			"Potato Croquette",
+			"Spicy Fried Kraken",
+			"Sweet Potato Fries",
+			"Tempura Plate"
 	};
 	
 	public Object[] stir_frying = {
-			
+			"Cheese Tteok-bokki",
+			"Fried Button Mushrooms",
+			"Fried Eggplants",
+			"Fried Onion",
+			"Fried Poulp",
+			"Fried Sausage Vegetables",
+			"Fried Vegetables",
+			"Friendship Shrimp Fried Rice",
+			"Kimchi Fried Rice",
+			"Kraken Stirfry",
+			"Mixed Fried Rice",
+			"Mushroom Fried Rice",
+			"Mushroom Marinade",
+			"Omurice",
+			"Pasta Ingredients",
+			"Pineapple Fried Rice",
+			"Popcorn",
+			"Shrimp Fried Rice",
+			"Silvervine and Snapper",
+			"Spicy Fried Chicken",
+			"Tomato Egg Stir-fry",
+			"Truffle Cream Gnocchi"
 	};
 	
 }
