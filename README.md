@@ -2,7 +2,7 @@
   <h1>Mabinogi - Cooking Recipe Bar</h1>
 </div>
 
-![Logo](https://github.com/ms-daniel/justimagens/blob/main/cooking_logo.png)
+![Logo](https://github.com/ms-daniel/justimagens/blob/main/cookingmabinogi/cooking_logo.png)
 
 This program in java is useful for cooking bar of recipes.
 
@@ -31,9 +31,9 @@ Is very simple!
 You can just do download of the .java programa or download the all code __(if you know how to use it)__.
 When you open it y'll have the interface of image 1. 
 
-![Image 1](https://github.com/danknightt/justimagens/blob/main/interface.png)
+![Image 1](https://github.com/danknightt/justimagens/blob/main/cookingmabinogi/interface.png)
 
-![Image 2](https://github.com/danknightt/justimagens/blob/main/barra.jpg)
+![Image 2](https://github.com/danknightt/justimagens/blob/main/cookingmabinogi/barra.jpg)
 
 #### Options:
 1. Is the bar you must choose the type of recipe.
