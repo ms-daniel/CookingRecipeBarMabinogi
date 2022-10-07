@@ -1,4 +1,8 @@
-![](https://github.com/ms-daniel/justimagens/blob/main/cooking_logo2.png)
+<div align="center">
+  <h1>Mabinogi - Cooking Recipe Bar</h1>
+</div>
+
+![Logo](https://github.com/ms-daniel/justimagens/blob/main/cooking_logo.png)
 
 This program in java is useful for cooking bar of recipes.
 
